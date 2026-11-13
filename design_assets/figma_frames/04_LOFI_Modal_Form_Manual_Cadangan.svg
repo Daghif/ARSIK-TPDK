@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="393" height="852" viewBox="0 0 393 852" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <clipPath id="clip_04_LOFI_Modal_Form_Manual_Cadangan">
+      <rect x="0" y="0" width="393" height="852" rx="36"/>
+    </clipPath>
+  </defs>
+  <g id="04_LOFI_Modal_Form_Manual_Cadangan" clip-path="url(#clip_04_LOFI_Modal_Form_Manual_Cadangan)">
+    <!-- Background Canvas -->
+    <rect id="Screen_Background" x="0" y="0" width="393" height="852" rx="36" fill="#F8FAFC"/>
+
+    
+  <g id="System_Status_Bar">
+    <text x="32" y="27" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0F172A">09:41</text>
+    <!-- Dynamic Island / Notch -->
+    <rect x="156" y="11" width="81" height="22" rx="11" fill="#0C0F0D"/>
+    <!-- Signal Bars -->
+    <rect x="307" y="21" width="3" height="6" rx="1" fill="#0F172A"/>
+    <rect x="312" y="19" width="3" height="8" rx="1" fill="#0F172A"/>
+    <rect x="317" y="16" width="3" height="11" rx="1" fill="#0F172A"/>
+    <rect x="322" y="14" width="3" height="13" rx="1" fill="#0F172A"/>
+    <!-- Battery -->
+    <rect x="334" y="15" width="23" height="12" rx="3.5" fill="none" stroke="#0F172A" stroke-width="1.3"/>
+    <rect x="336.5" y="17.5" width="16" height="7" rx="1.8" fill="#0F172A"/>
+    <rect x="358.2" y="18.5" width="2" height="5" rx="1" fill="#0F172A"/>
+  </g>
+
+    
+    <!-- Top App Bar -->
+    <rect id="Top_App_Bar" x="0" y="44" width="393" height="60" fill="#FFFFFF"/>
+    <line x1="0" y1="104" x2="393" y2="104" stroke="#334155" stroke-width="1.5"/>
+    <rect x="20" y="54" width="40" height="40" rx="10" fill="#FFFFFF" stroke="#334155" stroke-width="2"/>
+    <text x="40" y="79" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="900" fill="#334155">LOGO</text>
+    <text x="70" y="72" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="900" fill="#0F172A">ARSIK</text>
+    <text x="70" y="90" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#64748B">Asisten Pengenal Kerabat</text>
+    
+
+    <!-- Screen Body Content -->
+    
+  <!-- Dimmed Backdrop -->
+  <rect x="0" y="104" width="393" height="652" fill="#334155" fill-opacity="0.3"/>
+
+  <!-- Bottom Sheet Modal Surface -->
+  <rect x="16" y="174" width="361" height="540" rx="24" fill="#FFFFFF" stroke="#0F172A" stroke-width="2.5"/>
+  
+  <rect x="34" y="196" width="138" height="24" rx="12" fill="#E2E8F0" stroke="#334155" stroke-width="1.5"/>
+  <text x="103" y="212" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10.5" font-weight="900" fill="#0F172A">WAJAH BELUM DIKENAL</text>
+  <text x="34" y="244" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="900" fill="#0F172A">Daftarkan Kerabat Baru</text>
+  
+  <rect x="325" y="196" width="36" height="36" rx="10" fill="#F8FAFC" stroke="#334155" stroke-width="1.5"/>
+  <text x="343" y="219" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="900" fill="#0F172A">X</text>
+
+  <!-- Cropped Face + Mic Banner -->
+  <rect x="34" y="260" width="325" height="88" rx="14" fill="#F8FAFC" stroke="#64748B" stroke-width="2" stroke-dasharray="5 5"/>
+  <rect x="46" y="272" width="64" height="64" rx="12" fill="#FFFFFF" stroke="#334155" stroke-width="1.5"/>
+  <text x="78" y="309" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="900" fill="#334155">[Foto Crop]</text>
+  <text x="124" y="296" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="900" fill="#0F172A">[ Mikrofon Aktif (id-ID) ]</text>
+  <text x="124" y="316" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569">Bicara langsung atau isi form di bawah.</text>
+
+  <!-- Form Fields -->
+  <text x="34" y="374" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="900" fill="#0F172A">Nama Panggilan / Lengkap</text>
+  <rect x="34" y="384" width="325" height="50" rx="12" fill="#FFFFFF" stroke="#334155" stroke-width="2"/>
+  <text x="50" y="415" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F172A">Dimas Pratama</text>
+
+  <text x="34" y="460" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="900" fill="#0F172A">Hubungan Keluarga</text>
+  <rect x="34" y="470" width="325" height="50" rx="12" fill="#FFFFFF" stroke="#334155" stroke-width="2"/>
+  <text x="50" y="501" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F172A">Cucu</text>
+
+  <!-- Chips -->
+  <rect x="34" y="534" width="62" height="34" rx="17" fill="#FFFFFF" stroke="#334155" stroke-width="1.5"/>
+  <text x="65" y="556" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0F172A">Anak</text>
+  <rect x="104" y="534" width="62" height="34" rx="17" fill="#CBD5E1" stroke="#0F172A" stroke-width="2"/>
+  <text x="135" y="556" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="900" fill="#0F172A">Cucu</text>
+  <rect x="174" y="534" width="80" height="34" rx="17" fill="#FFFFFF" stroke="#334155" stroke-width="1.5"/>
+  <text x="214" y="556" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0F172A">Menantu</text>
+  <rect x="262" y="534" width="84" height="34" rx="17" fill="#FFFFFF" stroke="#334155" stroke-width="1.5"/>
+  <text x="304" y="556" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0F172A">Pasangan</text>
+
+  <!-- Submit Buttons -->
+  <rect x="34" y="630" width="115" height="54" rx="14" fill="#F8FAFC" stroke="#334155" stroke-width="2"/>
+  <text x="91" y="663" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="900" fill="#0F172A">Batal</text>
+  <rect x="159" y="630" width="200" height="54" rx="14" fill="#CBD5E1" stroke="#0F172A" stroke-width="2"/>
+  <text x="259" y="663" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="900" fill="#0F172A">Simpan Profil</text>
+
+
+    
+    <!-- Bottom 2-Tab Navigation Bar -->
+    <rect id="Bottom_Nav_Bar" x="0" y="756" width="393" height="80" fill="#FFFFFF"/>
+    <line x1="0" y1="756" x2="393" y2="756" stroke="#334155" stroke-width="1.5"/>
+    <!-- Tab 1: Kamera Deteksi -->
+    <rect x="18" y="768" width="172" height="52" rx="14" fill="#CBD5E1" stroke="#0F172A" stroke-width="2"/>
+    <text x="104" y="800" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="900" fill="#0F172A">[ Kamera Deteksi ]</text>
+    <!-- Tab 2: Daftar Kerabat -->
+    <rect x="203" y="768" width="172" height="52" rx="14" fill="#FFFFFF" stroke="#64748B" stroke-width="2"/>
+    <text x="289" y="800" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="900" fill="#0F172A">[ Daftar Kerabat ]</text>
+    
+
+    
+  <g id="Home_Gesture_Indicator">
+    <rect x="134" y="836" width="125" height="5" rx="2.5" fill="#0F172A" fill-opacity="0.25"/>
+  </g>
+
+    <!-- Outer Device Border -->
+    <rect id="Device_Frame_Border" x="0.75" y="0.75" width="391.5" height="850.5" rx="35.25" fill="none" stroke="#334155" stroke-width="1.5"/>
+  </g>
+</svg>

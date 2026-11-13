@@ -1,81 +1,116 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import SplashScreen from './components/SplashScreen';
 import FaceRecognition from './components/FaceRecognition';
 import PeopleList from './components/PeopleList';
-import { CameraIcon, UsersIcon, HeartPulseIcon } from './components/Icons';
+import {
+  CameraIcon,
+  UsersIcon,
+  HeartPulseIcon,
+  ShieldCheckIcon,
+} from './components/Icons';
 import { getPeople } from './utils/faceStorage';
 import './App.css';
 
 function App() {
-  const [activeTab, setActiveTab] = useState('detection');
-  const [updateTrigger, setUpdateTrigger] = useState(0);
-  const [peopleCount, setPeopleCount] = useState(0);
+  const [showSplash, setShowSplash] = useState(true);
+  const [modelsReady, setModelsReady] = useState(false);
+  const [activeTab, setActiveTab] = useState('detection'); // Hanya 2 Tab sesuai SK-NF06
+  const [peopleCount, setPeopleCount] = useState(() => getPeople().length);
 
-  useEffect(() => {
-    const people = getPeople();
-    setPeopleCount(people.length);
-  }, [updateTrigger, activeTab]);
+  const refreshPeopleCount = () => {
+    const list = getPeople();
+    setPeopleCount(list.length);
+  };
+
+  const handleSelectTab = (tab) => {
+    setActiveTab(tab);
+    refreshPeopleCount();
+  };
+
+  // Layar Pembuka (Splash Screen) saat memuat model face-api.js
+  if (showSplash) {
+    return (
+      <SplashScreen
+        onReady={(loaded) => {
+          setModelsReady(Boolean(loaded));
+          setShowSplash(false);
+        }}
+      />
+    );
+  }
 
   return (
-    <div className="arsik-app">
-      {/* Top Header Bar */}
-      <header className="arsik-header">
-        <div className="header-container">
-          <div className="brand-group">
-            <div className="brand-badge">
-              <HeartPulseIcon size={22} className="brand-icon" />
+    <div className="arsik-viewport-bg">
+      <div className="arsik-mobile-shell">
+        {/* Header Bar Bersih & Bermartabat */}
+        <header className="arsik-top-header">
+          <div className="header-brand">
+            <div className="header-logo-badge" aria-hidden="true">
+              <HeartPulseIcon size={22} />
             </div>
-            <div className="brand-text">
-              <div className="brand-title-row">
-                <h1 className="brand-name">ARSIK</h1>
-                <span className="brand-tag">v2.0 Asistif</span>
-              </div>
-              <p className="brand-desc">Asisten Pengenal Wajah Real-Time Berbantu Suara untuk Lansia Demensia</p>
+            <div className="header-titles">
+              <h1 className="header-app-name">ARSIK</h1>
+              <p className="header-app-subtitle">Asisten Pengenal Kerabat</p>
             </div>
           </div>
-        </div>
 
-        {/* Navigation Tabs */}
-        <nav className="nav-tabs-wrapper">
-          <div className="nav-tabs">
-            <button 
-              className={`nav-tab ${activeTab === 'detection' ? 'active' : ''}`}
-              onClick={() => setActiveTab('detection')}
-            >
-              <CameraIcon size={18} />
-              <span>Kamera Deteksi</span>
-            </button>
-            <button 
-              className={`nav-tab ${activeTab === 'people' ? 'active' : ''}`}
-              onClick={() => setActiveTab('people')}
-            >
-              <UsersIcon size={18} />
-              <span>Daftar Kerabat</span>
-              {peopleCount > 0 && <span className="tab-counter">{peopleCount}</span>}
-            </button>
+          <div className="header-privacy-pill" title="Data Wajah Tersimpan 100% Lokal di HP Ini">
+            <ShieldCheckIcon size={15} />
+            <span>100% Lokal</span>
           </div>
+        </header>
+
+        {/* Area Konten Utama */}
+        <main className="arsik-main-content">
+          {activeTab === 'detection' ? (
+            <FaceRecognition
+              modelsReady={modelsReady}
+              onPersonAdded={refreshPeopleCount}
+            />
+          ) : (
+            <PeopleList onUpdate={refreshPeopleCount} />
+          )}
+        </main>
+
+        {/* Navigasi Bawah 2-Tab Ramah Jempol (Fitts's Law, Hick's Law, & SK-NF06) */}
+        <nav className="arsik-bottom-nav" aria-label="Navigasi Utama">
+          <div
+            className="bottom-nav-indicator"
+            style={{
+              transform:
+                activeTab === 'detection' ? 'translateX(0%)' : 'translateX(100%)',
+            }}
+            aria-hidden="true"
+          />
+
+          <button
+            type="button"
+            onClick={() => handleSelectTab('detection')}
+            className={`bottom-nav-tab arsik-btn-interactive ${
+              activeTab === 'detection' ? 'active' : ''
+            }`}
+            aria-current={activeTab === 'detection' ? 'page' : undefined}
+          >
+            <CameraIcon size={22} />
+            <span>Kamera Deteksi</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => handleSelectTab('people')}
+            className={`bottom-nav-tab arsik-btn-interactive ${
+              activeTab === 'people' ? 'active' : ''
+            }`}
+            aria-current={activeTab === 'people' ? 'page' : undefined}
+          >
+            <UsersIcon size={22} />
+            <span>Daftar Kerabat</span>
+            {peopleCount > 0 && (
+              <span className="nav-count-badge">{peopleCount}</span>
+            )}
+          </button>
         </nav>
-      </header>
-
-      {/* Main Content Area */}
-      <main className="arsik-main">
-        {activeTab === 'detection' ? (
-          <FaceRecognition onPersonAdded={() => setUpdateTrigger(prev => prev + 1)} />
-        ) : (
-          <PeopleList onUpdate={() => setUpdateTrigger(prev => prev + 1)} />
-        )}
-      </main>
-
-      {/* Dignified Assistive Footer */}
-      <footer className="arsik-footer">
-        <div className="footer-content">
-          <p className="footer-hint">
-            <strong>Panduan Penggunaan:</strong> Letakkan perangkat di atas meja menghadap lawan bicara lansia. Wajah kerabat akan dikenali secara otomatis dan identitas akan ditampilkan dengan teks kontras tinggi tanpa perlu menekan tombol apa pun.
-          </p>
-          <div className="footer-credits">
-            <span>II4051 Rekayasa Sistem Multimedia • Institut Teknologi Bandung</span>
-          </div>
-        </div>
-      </footer>
+      </div>
     </div>
   );
 }

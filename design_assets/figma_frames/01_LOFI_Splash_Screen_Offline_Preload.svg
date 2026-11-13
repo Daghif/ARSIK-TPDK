@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="393" height="852" viewBox="0 0 393 852" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <clipPath id="clip_01_LOFI_Splash_Screen_Offline_Preload">
+      <rect x="0" y="0" width="393" height="852" rx="36"/>
+    </clipPath>
+  </defs>
+  <g id="01_LOFI_Splash_Screen_Offline_Preload" clip-path="url(#clip_01_LOFI_Splash_Screen_Offline_Preload)">
+    <!-- Background Canvas -->
+    <rect id="Screen_Background" x="0" y="0" width="393" height="852" rx="36" fill="#F8FAFC"/>
+
+    
+  <g id="System_Status_Bar">
+    <text x="32" y="27" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0F172A">09:41</text>
+    <!-- Dynamic Island / Notch -->
+    <rect x="156" y="11" width="81" height="22" rx="11" fill="#0C0F0D"/>
+    <!-- Signal Bars -->
+    <rect x="307" y="21" width="3" height="6" rx="1" fill="#0F172A"/>
+    <rect x="312" y="19" width="3" height="8" rx="1" fill="#0F172A"/>
+    <rect x="317" y="16" width="3" height="11" rx="1" fill="#0F172A"/>
+    <rect x="322" y="14" width="3" height="13" rx="1" fill="#0F172A"/>
+    <!-- Battery -->
+    <rect x="334" y="15" width="23" height="12" rx="3.5" fill="none" stroke="#0F172A" stroke-width="1.3"/>
+    <rect x="336.5" y="17.5" width="16" height="7" rx="1.8" fill="#0F172A"/>
+    <rect x="358.2" y="18.5" width="2" height="5" rx="1" fill="#0F172A"/>
+  </g>
+
+    
+
+    <!-- Screen Body Content -->
+    
+  <!-- Wireframe Photo Placeholder with Diagonal Cross -->
+  <g id="Placeholder_Splash_Photo">
+    <rect x="20" y="80" width="353" height="210" rx="18" fill="#FFFFFF" stroke="#64748B" stroke-width="2" stroke-dasharray="6 6"/>
+    <line x1="20" y1="80" x2="373" y2="290" stroke="#CBD5E1" stroke-width="1.5"/>
+    <line x1="373" y1="80" x2="20" y2="290" stroke="#CBD5E1" stroke-width="1.5"/>
+    <rect x="96" y="165" width="200" height="40" rx="8" fill="#FFFFFF" stroke="#334155" stroke-width="1.5"/>
+    <text x="196" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="900" fill="#0F172A">[ Foto Dokumentasi Lansia &amp; Keluarga ]</text>
+  </g>
+
+  <!-- Title & Copy Box -->
+  <g id="Title_Block">
+    <rect x="20" y="310" width="353" height="114" rx="18" fill="#FFFFFF" stroke="#334155" stroke-width="2"/>
+    <text x="196" y="348" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="900" fill="#0F172A">ARSIK</text>
+    <text x="196" y="374" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#334155">Aplikasi Rekayasa Sistem Identifikasi Kerabat</text>
+    <text x="196" y="398" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#64748B">Asisten pengenal wajah keluarga untuk pasien demensia</text>
+  </g>
+
+  <!-- Preload Progress Card -->
+  <g id="Preload_Progress_Box">
+    <rect x="20" y="444" width="353" height="106" rx="18" fill="#FFFFFF" stroke="#334155" stroke-width="2"/>
+    <circle cx="44" cy="474" r="6" fill="#334155"/>
+    <text x="58" y="479" font-family="Helvetica, Arial, sans-serif" font-size="13.5" font-weight="900" fill="#0F172A">MEMUAT MODEL AI LOKAL (SK-F02)</text>
+    <text x="349" y="479" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="900" fill="#0F172A">85%</text>
+    <rect x="40" y="496" width="313" height="14" rx="7" fill="#F1F5F9" stroke="#334155" stroke-width="1.5"/>
+    <rect x="42" y="498" width="260" height="10" rx="5" fill="#334155"/>
+    <text x="40" y="532" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#64748B">Inisialisasi TinyFaceDetector, FaceLandmark68, &amp; FaceRecognitionNet.</text>
+  </g>
+
+  <!-- Local Privacy Banner (SK-NF03) -->
+  <g id="Privacy_Banner">
+    <rect x="20" y="570" width="353" height="92" rx="18" fill="#F8FAFC" stroke="#64748B" stroke-width="2" stroke-dasharray="6 6"/>
+    <text x="196" y="605" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13.5" font-weight="900" fill="#0F172A">[ 100% Privasi Perangkat Lokal / UU PDP No. 27/2022 ]</text>
+    <text x="196" y="628" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569">Vektor biometrik &amp; foto wajah kerabat tersimpan di localStorage.</text>
+    <text x="196" y="646" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569">Tidak ada data yang dikirim ke peladen eksternal.</text>
+  </g>
+
+
+    
+
+    
+  <g id="Home_Gesture_Indicator">
+    <rect x="134" y="836" width="125" height="5" rx="2.5" fill="#0F172A" fill-opacity="0.25"/>
+  </g>
+
+    <!-- Outer Device Border -->
+    <rect id="Device_Frame_Border" x="0.75" y="0.75" width="391.5" height="850.5" rx="35.25" fill="none" stroke="#334155" stroke-width="1.5"/>
+  </g>
+</svg>

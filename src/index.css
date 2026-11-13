@@ -1,33 +1,164 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
 :root {
-  font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #0f172a;
-  background-color: #f8fafc;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Tipografi Ramah Lansia: Lato & Helvetica Neue (Bebas gaya AI / futuristik) */
+  --font-sans: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  /* Palet Warna Permukaan Bersih & Lembut */
+  --bg-page: #EEF2F6;
+  --bg-shell: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-subtle: #F1F5F9;
+
+  --text-primary: #0F172A;
+  --text-secondary: #334155;
+  --text-muted: #64748B;
+
+  /* Garis Tepi Tipis 0.5px & Bayangan Halus (Hi-Fi Elevation) */
+  --border-hairline: 0.5px solid rgba(15, 23, 42, 0.12);
+  --border-color: rgba(15, 23, 42, 0.12);
+  --border-strong: rgba(15, 23, 42, 0.22);
+
+  --shadow-sm: 0 2px 8px -2px rgba(15, 23, 42, 0.06), 0 1px 3px -1px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 10px 26px -6px rgba(15, 23, 42, 0.09), 0 4px 10px -3px rgba(15, 23, 42, 0.05);
+  --shadow-lg: 0 20px 42px -10px rgba(15, 23, 42, 0.14), 0 8px 18px -6px rgba(15, 23, 42, 0.06);
+
+  /* Warna Identitas & Aksi Utama */
+  --brand-navy: #1E3A8A;
+  --brand-navy-dark: #172554;
+  --brand-navy-light: #DBEAFE;
+
+  /* Warna Status Wajah Dikenali (Hijau Kontras Tinggi - SK-F05 & SK-NF05) */
+  --known-green-bg: #22C55E;
+  --known-green-dark: #15803D;
+  --known-green-soft: #ECFDF5;
+  --known-green-border: #16A34A;
+
+  /* Warna Status Wajah Tidak Dikenal (Merah Kontras Tinggi - SK-F05 & SK-NF05) */
+  --unknown-red-bg: #EF4444;
+  --unknown-red-dark: #B91C1C;
+  --unknown-red-soft: #FEF2F2;
+  --unknown-red-border: #DC2626;
+
+  /* Hukum Fisika & Micro-Interactions (Tanpa Bounce Berlebih - Rule #1..#20) */
+  --ease-out-entrance: cubic-bezier(0.22, 1, 0.36, 1); /* #1 Ease-out for entrances */
+  --ease-in-out-move: cubic-bezier(0.65, 0, 0.35, 1);  /* #9 Ease-in-out for moves */
+  --ease-exit: cubic-bezier(0.4, 0, 1, 1);
+  --dur-enter: 220ms;                                  /* #2 150-250ms */
+  --dur-exit: 175ms;                                   /* #15 Exits 20% shorter */
+  --stagger-step: 30ms;                                /* #3 Stagger list rows by 30ms */
+  --press-scale: 0.97;                                 /* #4 Scale to 0.97 on press */
+
+  /* Ukuran Touch Target Lansia (Fitts's Law & Bigger Hit Areas >= 54px) */
+  --touch-min: 54px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
 }
 
-body {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  background-color: #f8fafc;
-  color: #0f172a;
+  -webkit-tap-highlight-color: transparent;
 }
 
-#root {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+html,
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background-color: var(--bg-shell);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-button, input, select, textarea {
-  font-family: inherit;
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-sans);
+  font-size: inherit;
+  color: inherit;
+}
+
+/* Rule #4 & #14: Scale to 0.97 on press, instant response while held */
+.arsik-btn-interactive {
+  transition:
+    transform 80ms ease-out,
+    background-color 150ms ease,
+    border-color 150ms ease,
+    box-shadow 150ms ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.arsik-btn-interactive:active:not(:disabled) {
+  transform: scale(var(--press-scale));
+  transition-duration: 30ms;
+}
+
+/* Rule #1 & #10: Modal / Popover starts at 0.95 with ease-out entrance */
+@keyframes arsikModalEnter {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes arsikSheetEnter {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Rule #3: Staggered list row entrance (30ms per row) */
+@keyframes arsikRowEnter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Rule #8: Gentle single pulse to confirm success (No chaotic bounce) */
+@keyframes arsikSuccessPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.35);
+  }
+  50% {
+    transform: scale(1.015);
+    box-shadow: 0 0 0 10px rgba(22, 163, 74, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(22, 163, 74, 0);
+  }
+}
+
+/* Rule #18: Crossfade icon/state transition */
+@keyframes arsikCrossfade {
+  from {
+    opacity: 0;
+    filter: blur(2px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
 }

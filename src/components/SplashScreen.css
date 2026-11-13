@@ -1,0 +1,264 @@
+.arsik-splash {
+  min-height: 100dvh;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background-color: var(--bg-page);
+  animation: arsikCrossfade 220ms var(--ease-out-entrance);
+}
+
+.arsik-splash.splash-exit {
+  opacity: 0;
+  transform: scale(0.985);
+  transition:
+    opacity var(--dur-exit) var(--ease-exit),
+    transform var(--dur-exit) var(--ease-exit);
+}
+
+.splash-card {
+  width: 100%;
+  max-width: 440px;
+  min-height: 100dvh;
+  background-color: var(--bg-surface);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@media (min-width: 520px) {
+  .arsik-splash {
+    align-items: center;
+    padding: 20px;
+  }
+
+  .splash-card {
+    min-height: 760px;
+    max-height: 92dvh;
+    border: var(--border-hairline);
+    border-radius: 28px;
+    box-shadow: var(--shadow-lg);
+  }
+}
+
+/* Banner Foto Keluarga Asli */
+.splash-photo-banner {
+  position: relative;
+  width: 100%;
+  height: 245px;
+  background-color: #CBD5E1;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.splash-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  display: block;
+}
+
+.splash-photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.48) 0%,
+    rgba(15, 23, 42, 0.05) 55%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.splash-institution-badge {
+  background-color: rgba(255, 255, 255, 0.94);
+  color: var(--text-primary);
+  border: 0.5px solid rgba(15, 23, 42, 0.14);
+  box-shadow: var(--shadow-sm);
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+.splash-content-body {
+  flex: 1;
+  padding: 8px 22px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.splash-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.splash-brand-inline {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.splash-logo-box {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  background-color: var(--brand-navy);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 8px 20px -4px rgba(30, 58, 138, 0.35);
+}
+
+.splash-brand-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.splash-title {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+.splash-acronym {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--brand-navy);
+  margin-top: 2px;
+}
+
+.splash-tagline {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.splash-progress-section {
+  background-color: var(--bg-surface);
+  border: var(--border-hairline);
+  border-radius: 18px;
+  padding: 18px 16px;
+  box-shadow: var(--shadow-md);
+}
+
+.splash-progress-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.splash-step-label {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.splash-percent {
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--brand-navy);
+}
+
+.splash-progress-track {
+  width: 100%;
+  height: 12px;
+  background-color: #E2E8F0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.splash-progress-fill {
+  height: 100%;
+  background-color: var(--brand-navy);
+  border-radius: 999px;
+  transition: width 240ms var(--ease-in-out-move);
+}
+
+.splash-ready-pill {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: var(--known-green-soft);
+  color: var(--known-green-dark);
+  border: 0.5px solid rgba(22, 163, 74, 0.35);
+  border-radius: 10px;
+  font-size: 14.5px;
+  font-weight: 700;
+  animation: arsikSuccessPulse 500ms var(--ease-out-entrance);
+}
+
+.splash-error-box {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.splash-error-box p {
+  font-size: 14px;
+  color: var(--unknown-red-dark);
+  margin-bottom: 10px;
+}
+
+.splash-continue-btn {
+  width: 100%;
+  min-height: var(--touch-min);
+  background-color: var(--brand-navy);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+}
+
+.splash-privacy-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  background-color: #F0FDF4;
+  border: 0.5px solid rgba(22, 163, 74, 0.3);
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.splash-privacy-icon {
+  color: var(--known-green-dark);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.splash-privacy-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.splash-privacy-text strong {
+  font-size: 15px;
+  font-weight: 900;
+  color: #14532D;
+}
+
+.splash-privacy-text span {
+  font-size: 14px;
+  color: #166534;
+  line-height: 1.4;
+}

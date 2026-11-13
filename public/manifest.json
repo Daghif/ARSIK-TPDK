@@ -1,0 +1,19 @@
+{
+  "name": "ARSIK — Asisten Pengenal Kerabat Lansia",
+  "short_name": "ARSIK",
+  "description": "Aplikasi Rekayasa Sistem Identifikasi Kerabat untuk Pasien Demensia (II4051 Rekayasa Sistem Multimedia ITB)",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F8FAFC",
+  "theme_color": "#1E3A8A",
+  "lang": "id-ID",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="393" height="852" viewBox="0 0 393 852" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <clipPath id="clip_05_LOFI_Daftar_Kerabat_Caregiver">
+      <rect x="0" y="0" width="393" height="852" rx="36"/>
+    </clipPath>
+  </defs>
+  <g id="05_LOFI_Daftar_Kerabat_Caregiver" clip-path="url(#clip_05_LOFI_Daftar_Kerabat_Caregiver)">
+    <!-- Background Canvas -->
+    <rect id="Screen_Background" x="0" y="0" width="393" height="852" rx="36" fill="#F8FAFC"/>
+
+    
+  <g id="System_Status_Bar">
+    <text x="32" y="27" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0F172A">09:41</text>
+    <!-- Dynamic Island / Notch -->
+    <rect x="156" y="11" width="81" height="22" rx="11" fill="#0C0F0D"/>
+    <!-- Signal Bars -->
+    <rect x="307" y="21" width="3" height="6" rx="1" fill="#0F172A"/>
+    <rect x="312" y="19" width="3" height="8" rx="1" fill="#0F172A"/>
+    <rect x="317" y="16" width="3" height="11" rx="1" fill="#0F172A"/>
+    <rect x="322" y="14" width="3" height="13" rx="1" fill="#0F172A"/>
+    <!-- Battery -->
+    <rect x="334" y="15" width="23" height="12" rx="3.5" fill="none" stroke="#0F172A" stroke-width="1.3"/>
+    <rect x="336.5" y="17.5" width="16" height="7" rx="1.8" fill="#0F172A"/>
+    <rect x="358.2" y="18.5" width="2" height="5" rx="1" fill="#0F172A"/>
+  </g>
+
+    
+    <!-- Top App Bar -->
+    <rect id="Top_App_Bar" x="0" y="44" width="393" height="60" fill="#FFFFFF"/>
+    <line x1="0" y1="104" x2="393" y2="104" stroke="#334155" stroke-width="1.5"/>
+    <rect x="20" y="54" width="40" height="40" rx="10" fill="#FFFFFF" stroke="#334155" stroke-width="2"/>
+    <text x="40" y="79" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="900" fill="#334155">LOGO</text>
+    <text x="70" y="72" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="900" fill="#0F172A">ARSIK</text>
+    <text x="70" y="90" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#64748B">Asisten Pengenal Kerabat</text>
+    
+
+    <!-- Screen Body Content -->
+    
+  <!-- Header Card with Search -->
+  <rect x="20" y="116" width="353" height="118" rx="20" fill="#FFFFFF" stroke="#334155" stroke-width="2"/>
+  <text x="38" y="146" font-family="Helvetica, Arial, sans-serif" font-size="19" font-weight="900" fill="#0F172A">Daftar Kerabat Terdaftar</text>
+  <text x="38" y="166" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#64748B">3 anggota keluarga tersimpan di perangkat ini.</text>
+  
+  <rect x="38" y="178" width="317" height="42" rx="12" fill="#F8FAFC" stroke="#64748B" stroke-width="2" stroke-dasharray="5 5"/>
+  <text x="54" y="204" font-family="Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#64748B">[ Cari nama atau hubungan... ]</text>
+
+  <!-- Person Row 1 -->
+  <rect x="20" y="248" width="353" height="88" rx="18" fill="#FFFFFF" stroke="#334155" stroke-width="2"/>
+  <rect x="34" y="262" width="60" height="60" rx="14" fill="#F8FAFC" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="64" y="297" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="900" fill="#475569">[Foto]</text>
+  <text x="106" y="287" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="900" fill="#0F172A">Budi Santoso</text>
+  <rect x="216" y="272" width="90" height="22" rx="11" fill="#E2E8F0" stroke="#334155" stroke-width="1"/>
+  <text x="261" y="287" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="900" fill="#0F172A">Anak Pertama</text>
+  <text x="106" y="310" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#64748B">Terakhir terlihat: Baru saja</text>
+  <rect x="318" y="272" width="40" height="40" rx="10" fill="#F8FAFC" stroke="#334155" stroke-width="1.5"/>
+  <text x="338" y="297" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="900" fill="#0F172A">[Del]</text>
+
+  <!-- Person Row 2 -->
+  <rect x="20" y="350" width="353" height="88" rx="18" fill="#FFFFFF" stroke="#334155" stroke-width="2"/>
+  <rect x="34" y="364" width="60" height="60" rx="14" fill="#F8FAFC" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="64" y="399" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="900" fill="#475569">[Foto]</text>
+  <text x="106" y="389" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="900" fill="#0F172A">Rina Wulandari</text>
+  <rect x="236" y="374" width="70" height="22" rx="11" fill="#E2E8F0" stroke="#334155" stroke-width="1"/>
+  <text x="271" y="389" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="900" fill="#0F172A">Menantu</text>
+  <text x="106" y="412" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#64748B">Terakhir terlihat: Hari ini, 08:30</text>
+  <rect x="318" y="374" width="40" height="40" rx="10" fill="#F8FAFC" stroke="#334155" stroke-width="1.5"/>
+  <text x="338" y="399" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="900" fill="#0F172A">[Del]</text>
+
+  <!-- Person Row 3 -->
+  <rect x="20" y="452" width="353" height="88" rx="18" fill="#FFFFFF" stroke="#334155" stroke-width="2"/>
+  <rect x="34" y="466" width="60" height="60" rx="14" fill="#F8FAFC" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="64" y="501" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="900" fill="#475569">[Foto]</text>
+  <text x="106" y="491" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="900" fill="#0F172A">Dimas Pratama</text>
+  <rect x="236" y="476" width="60" height="22" rx="11" fill="#E2E8F0" stroke="#334155" stroke-width="1"/>
+  <text x="266" y="491" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="900" fill="#0F172A">Cucu</text>
+  <text x="106" y="514" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#64748B">Terakhir terlihat: Kemarin, 16:45</text>
+  <rect x="318" y="476" width="40" height="40" rx="10" fill="#F8FAFC" stroke="#334155" stroke-width="1.5"/>
+  <text x="338" y="501" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="900" fill="#0F172A">[Del]</text>
+
+  <!-- Clear All & Privacy Footer -->
+  <rect x="20" y="560" width="353" height="50" rx="14" fill="#F8FAFC" stroke="#334155" stroke-width="2"/>
+  <text x="196" y="591" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="900" fill="#0F172A">[ Hapus Seluruh Data Kerabat ]</text>
+
+  <rect x="20" y="624" width="353" height="60" rx="14" fill="#FFFFFF" stroke="#334155" stroke-width="1.5"/>
+  <text x="36" y="648" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#334155">Penyimpanan Lokal: arsik_people (localStorage)</text>
+  <text x="36" y="668" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#64748B">Sesuai UU Pelindungan Data Pribadi No. 27 Tahun 2022.</text>
+
+
+    
+    <!-- Bottom 2-Tab Navigation Bar -->
+    <rect id="Bottom_Nav_Bar" x="0" y="756" width="393" height="80" fill="#FFFFFF"/>
+    <line x1="0" y1="756" x2="393" y2="756" stroke="#334155" stroke-width="1.5"/>
+    <!-- Tab 1: Kamera Deteksi -->
+    <rect x="18" y="768" width="172" height="52" rx="14" fill="#FFFFFF" stroke="#64748B" stroke-width="2"/>
+    <text x="104" y="800" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="900" fill="#0F172A">[ Kamera Deteksi ]</text>
+    <!-- Tab 2: Daftar Kerabat -->
+    <rect x="203" y="768" width="172" height="52" rx="14" fill="#CBD5E1" stroke="#0F172A" stroke-width="2"/>
+    <text x="289" y="800" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="900" fill="#0F172A">[ Daftar Kerabat ]</text>
+    
+
+    
+  <g id="Home_Gesture_Indicator">
+    <rect x="134" y="836" width="125" height="5" rx="2.5" fill="#0F172A" fill-opacity="0.25"/>
+  </g>
+
+    <!-- Outer Device Border -->
+    <rect id="Device_Frame_Border" x="0.75" y="0.75" width="391.5" height="850.5" rx="35.25" fill="none" stroke="#334155" stroke-width="1.5"/>
+  </g>
+</svg>
