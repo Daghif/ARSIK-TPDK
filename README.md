@@ -48,7 +48,7 @@ Untuk memahami seluruh spesifikasi, rancangan arsitektur, dan panduan AI, silaka
 ### 2. Instalasi & Menjalankan Aplikasi
 ```bash
 # Clone atau buka direktori proyek
-git clone https://github.com/julius123123/ARSIK.git
+git clone https://github.com/Daghif/ARSIK-TPDK.git
 cd ARSIK-TPDK
 
 # Pasang dependensi
